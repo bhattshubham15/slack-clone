@@ -1,0 +1,35 @@
+[debug] [2021-03-02T08:20:55.536Z] ----------------------------------------------------------------------
+[debug] [2021-03-02T08:20:55.539Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-03-02T08:20:55.539Z] CLI Version:   9.1.0
+[debug] [2021-03-02T08:20:55.539Z] Platform:      linux
+[debug] [2021-03-02T08:20:55.539Z] Node Version:  v15.3.0
+[debug] [2021-03-02T08:20:55.540Z] Time:          Tue Mar 02 2021 13:50:55 GMT+0530 (India Standard Time)
+[debug] [2021-03-02T08:20:55.540Z] ----------------------------------------------------------------------
+[debug] [2021-03-02T08:20:55.540Z] 
+[debug] [2021-03-02T08:20:55.547Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-02T08:20:55.547Z] > authorizing via signed-in user
+[debug] [2021-03-02T08:20:55.547Z] [iam] checking project slack-clone-be1da for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-03-02T08:20:55.550Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/slack-clone-be1da:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-03-02T08:20:57.428Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 02 Mar 2021 08:20:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1461","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-02T08:20:57.433Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/slack-clone-be1da  
+ 
+[debug] [2021-03-02T08:20:58.022Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 02 Mar 2021 08:20:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'slack-clone-be1da'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-03-02T08:20:58.029Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/slack-clone-be1da/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-03-02T08:21:00.587Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 02 Mar 2021 08:21:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[slack-clone-be1da]: beginning deploy... 
+[info] i  hosting[slack-clone-be1da]: found 18 files in build 
+[debug] [2021-03-02T08:21:00.604Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2021-03-02T08:21:01.444Z] > refreshing access token with scopes: []
+[debug] [2021-03-02T08:21:01.444Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-02T08:21:01.447Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2021-03-02T08:21:01.447Z] [hosting][hash queue][FINAL] {"max":835,"min":18,"avg":69.5,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":843}
+[debug] [2021-03-02T08:21:01.846Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 02 Mar 2021 08:21:01 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-02T08:21:02.022Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/slack-clone-be1da/versions/97fd751919154c4e:populateFiles [none]
+[debug] [2021-03-02T08:21:02.022Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/slack-clone-be1da/versions/97fd751919154c4e:populateFiles {"files":{"/asset-manifest.json":"1a360635488d8802b0eac558876d5dcfd36710683de4df9f97fed311846920a8","/favicon.ico":"a4435238a463000b85d9dcb2dd8c8293043f96bca96b202741aeec5c3f5c132b","/index.html":"fd115fe8d704b4c5e64d78392079ba2c283c1ed7c76b0aaea1a95ea4fa338978","/logo192.png":"1140ecb66280bd3a5e610227d0eb19bd92b73d632c740362dd20bdd5f175671a","/manifest.json":"9ad958a90fd44be9927fbca95a7cf583f8abacb882ea66fd5917933ff268097e","/robots.txt":"4e9f245d9266511c9bf4497f1985e375ec1002ce7421db8e37c7bb7fc1fda5d7","/logo512.png":"fd3e4d8841a56bbbcfbb2186741bab5fb4083fbfbb6480bb70581a8d5b9a1c98","/static/css/main.0f4a33c5.chunk.css":"5072105713944ff1df7461fdd5e49a8d7536d5c1892777a63f5c289fa27295ab","/static/css/main.0f4a33c5.chunk.css.map":"a92410e0b065d9808d714ae0cffdd9799d03b0b9d97ab087d2230b5a62e9963e","/static/js/2.70db0c02.chunk.js.LICENSE.txt":"19061190cc3bcfe6ff28fd71704f9f8e2723c0d0d082c25c300ccf513d100eb0","/static/css/2.fbb149ea.chunk.css":"c6e06b1d30c458636dc7487a657775092db205bc2ba57de8a50a94642781d038","/static/js/main.22ad1916.chunk.js":"f4006cc7e6746b01393a1db8b9bfe3054efc2b2c2352fac8749690e05d35e5b4","/static/js/runtime-main.1ea6344f.js":"72dad0adc813a6dfa0ef0d75462caa5d1d9c0d9b8712622d09980a5c361ee817","/static/js/runtime-main.1ea6344f.js.map":"a5dc0d9e5099931a69b3db889ac93a8dc88fb6e54fd598aff3aa3747c326b3b8","/static/css/2.fbb149ea.chunk.css.map":"d2d52621725e10804e6db414a050c906699b1b23ee44682b750ef61c764bbd42","/static/js/main.22ad1916.chunk.js.map":"2b12cf41ecc55f8bf52835be447025ee8bb10f0aba630c19af25a331a5a2ca76","/static/js/2.70db0c02.chunk.js":"f4059cc1d4ef7fae965cd06dcaab16e68af375ecba735cc22f893bde2ade82dd","/static/js/2.70db0c02.chunk.js.map":"e9bdbbfb57788e7cb651d8e2327d4f929450f394112f4d468756eed6d71c84a7"}}
