@@ -28,7 +28,7 @@ const Sidebar = () => {
         <SidebarContainer>
             <SidebarHeader>
                 <SidebarInfo>
-                    <h2>Shubham Bhatt</h2>
+                    <h2>{user.displayName}</h2>
                     <h3>
                         <FiberManualRecordRounded />
                         Some Info Here
